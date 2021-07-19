@@ -1,0 +1,233 @@
+/* fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,600&display=swap");
+
+/* commont css / utility */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+    width: 100%;
+    max-width: 1160px;
+  }
+  
+  .button {
+    background-color: #E02C6D;
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+  .link-button
+  {
+    color: #fff;
+    text-decoration: none;
+
+  }
+/*header section */
+ header
+ {
+    background-color: #2D25A0;
+    display: flex;
+    justify-content: center;
+ }
+ .header
+ {
+    margin: 70px 15px;
+    display: flex;
+    align-items: center;
+ }
+ .header-text,.header-logo
+ {
+     width: 50%;
+ }
+ .header-text h1 {
+    font-size: 64px;
+    color: #fff;
+    font-size: 700;
+    margin-bottom: 20px;
+    transition: 0.2s ease;
+  }
+.link-button i {
+    transition: all 0.2s ease;
+    margin-right: 5px;
+  }
+  .link-button:hover i {
+    transform: translateX(5px);
+  }
+
+  .header-logo img {
+    width: 100%;
+  }
+  
+/* players section */
+.player
+{
+    display: flex;
+    justify-content: center;
+}
+.player-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  .cards-item {
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border: 1px solid #6464641c;
+    transition: box-shadow, transform, 0.2s ease;
+  }
+  .cards-item:hover {
+    box-shadow: none;
+    transform: translateY(3px);
+  }
+.player-image img {
+  width: 100%;
+}
+
+.player-content h1 {
+  margin: 15px 0;
+  font-weight: 700;
+  font-size: 28px;
+  color: #18191f;
+}
+.player-content p {
+  line-height: 1.5;
+  font-size: 16px;
+  color: #6c6c6c;
+  
+}
+
+/* highlights */
+.highlight {
+    display: flex;
+    justify-content: center;
+  }
+  
+.highlights {
+    margin: 70px 15px;
+  }
+  
+.highlights-content{
+    display: flex;
+    align-items: center;
+  }
+  .highlight-text h1 {
+    font-size: 48px;
+    color: #18191f;
+    font-weight: 700;
+    margin-bottom: 15px;
+    transition: 0.2s ease;
+  }
+  
+  .highlight-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #6c6c6c;
+    margin-bottom: 20px;
+  }
+  
+  .highlight-img img {
+    width: 100%;
+  }
+  /* footer */
+  footer
+  {
+      display: flex;
+      justify-content: center;
+  }
+  .footer-details
+  {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .footer-logo img
+  {
+      width: 100%;
+  }
+  .social-icon {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .social-icon .social-link {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #e7e7e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 7px;
+    transition: all 0.2s linear;
+  }
+  
+  .social-link:hover {
+    transform: scale(1.2);
+    background-color: #e02c6d;
+    color: #fff;
+  }
+  
+  .social-link i {
+    font-size: 18px;
+    color: #969bab;
+  }
+  
+  .copyright {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+  }
+
+  /* media query */
+
+  @media screen and (max-width:1024px) {
+      .header
+      {
+          flex-direction: column-reverse;
+      }
+      .player-cards
+      {
+          grid-template-columns: repeat(2,1fr);
+      }
+      .highlights-content
+      {
+          flex-direction: column-reverse;
+      }
+      .highlights-content .highlight-text p
+      {
+          font-size: 50px;
+          font-weight: 700;
+      }
+      .social-icon .social-link
+      {
+          font-size: 100px;
+      }
+      .footer-details .copyright
+      {
+          font-weight: 700;
+          font-size: 36px;
+      }
+  }
+  @media screen and (max-width:600px)
+  {
+    .player-cards
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .highlights-content .highlight-text p
+      {
+          font-size: 18px;
+          font-weight: 400;
+      }
+    .footer-details .copyright
+      {
+          font-weight: 400;
+          font-size: 18px;
+      }
+  }
