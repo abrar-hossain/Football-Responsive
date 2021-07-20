@@ -216,6 +216,11 @@ body {
   }
   @media screen and (max-width:600px)
   {
+    .header
+      {
+          flex-direction: column-reverse;
+          align-items: center;
+      }
     .player-cards
     {
         grid-template-columns: repeat(1,1fr);
